@@ -2,7 +2,7 @@ pipeline {
     agent { label 'dev' }
  
     environment {
-        DOCKER_CREDS   = credentials('Docker_Hub_Id_Pwd')  // _USR, _PSW
+        DOCKER_CREDS   = credentials('docker-hub-id-passwd')  // _USR, _PSW
  
         IMAGE_NAME     = 'notes-app'
         IMAGE_TAG      = "v1.${BUILD_NUMBER}"
